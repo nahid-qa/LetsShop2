@@ -1,0 +1,44 @@
+[
+   
+        {
+            "email": "test.nlt@gmail.com",
+            "password": "Testing@123",
+            "productName": "ADIDAS ORIGINAL",
+            "creditCard": "4542 9931 9292 2293",
+            "country": "ind"
+        },
+   
+        {
+            "email": "test.nlt@gmail.com",
+            "password": "Testing@123"
+        },
+    
+        {
+            "email": "test.nlt@gmail.com",
+            "password": "Testing@301",
+            "message" : " Incorrect email or password. "
+        },
+   
+        {
+            "email": "",
+            "password": "Testing@123",
+            "message": "*Email is required"
+        },
+   
+        {
+            "email": "test.nlt@gmail.com",
+            "password": "",
+            "message":"*Password is required"
+        },
+  
+        {
+            "email": "",
+            "password": ""
+        },
+   
+        {
+            "email": "test.nlt@gmail.com",
+            "password": "Testing@123"
+        }
+    
+    ]
