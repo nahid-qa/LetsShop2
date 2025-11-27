@@ -157,6 +157,28 @@ npx playwright test --ui
 
 📊 Reports & Debugging
 
+This project uses Playwright HTML Reports to provide a clear and interactive view of test executions
+
+🔧 Generate Report
+
+Run the following command to execute all tests and generate the HTML report:
+
+npx playwright test --reporter=html
+
+📂 View Report
+
+After the test run finishes, open the report using:
+
+npx playwright show-report
+
+This will launch an interactive dashboard showing:
+
+Test results (passed / failed / skipped)
+
+<img width="1671" height="1075" alt="image" src="https://github.com/user-attachments/assets/5c098931-ea45-4bfc-aac2-c7cfdb195131" />
+
+<img width="1751" height="1070" alt="image" src="https://github.com/user-attachments/assets/504025ac-ba46-45a7-a7d1-636d269b4acb" />
+
 View HTML report
 
 npx playwright show-report
@@ -164,6 +186,35 @@ npx playwright show-report
 View trace
 
 npx playwright show-trace trace.zip
+
+📁 Report Files in GitHub
+
+The full Playwright report folder (playwright-report/) is auto-generated and intentionally excluded from GitHub using .gitignore to keep the repository clean.
+
+Instead, this repository includes:
+
+✔ A small sample report under reports/sample-report/
+
+✔ Screenshots of the test report UI
+
+✔ Instructions to generate the complete report locally
+
+📘 Sample Report (For Recruiters)
+
+A lightweight sample report has been added under:
+
+reports/sample-report/
+
+This sample helps viewers understand:
+
+How the UI report looks
+
+What information Playwright provides
+
+How test runs are visualized
+
+
+For the full interactive report, clone the repo and run the tests locally.
 
 
 ---
