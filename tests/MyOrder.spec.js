@@ -33,7 +33,7 @@ test.beforeAll(async () => {
 
 })
 
-test("TC_MyOrder_01_Verify_Ordered_Product_Details", async ({ page }) => {
+test("TC_01_Verify_Ordered_Product_Details", async ({ page }) => {
 
     //Set loken value in local storage.
     await page.addInitScript(value => {

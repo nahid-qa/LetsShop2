@@ -2,7 +2,7 @@ const { test, expect } = require("@playwright/test");
 const { POmanager } = require("../pageobjects/POmanager");
 
 
-test('TC_NewUserRegistration_01_Check_Account_Registeration_Page_Title ', async ({ page }) => {
+test('TC_01_Check_Account_Registeration_Page_Title ', async ({ page }) => {
     const poManager = new POmanager(page);
     const registrationPage = poManager.getRegistrationPage();
 
@@ -15,7 +15,7 @@ test('TC_NewUserRegistration_01_Check_Account_Registeration_Page_Title ', async 
 }
 );
 
-test('TC_NewUserRegistration_02_Click_Login_Button_with_Empty_Fields', async ({ page }) => {
+test('TC_02_Click_Login_Button_with_Empty_Fields', async ({ page }) => {
     const poManager = new POmanager(page);
     const registrationPage = poManager.getRegistrationPage();
 
@@ -36,7 +36,7 @@ test('TC_NewUserRegistration_02_Click_Login_Button_with_Empty_Fields', async ({ 
 }
 );
 
-test('TC_NewUserRegistration_03_Successful_Registration_with_all_the_fields', async ({ page }) => {
+test('TC_03_Successful_Registration_with_all_the_fields', async ({ page }) => {
 
     const poManager = new POmanager(page)
     const registrationPage = poManager.getRegistrationPage();
@@ -102,7 +102,7 @@ test('TC_NewUserRegistration_03_Successful_Registration_with_all_the_fields', as
 }
 );
 
-test('TC_NewUserRegistration_04_Successful_Registration_with_Only_Required_Fields', async ({ page }) => {
+test('TC_04_Successful_Registration_with_Only_Required_Fields', async ({ page }) => {
 
     const poManager = new POmanager(page)
     const registrationPage = poManager.getRegistrationPage();
@@ -153,7 +153,7 @@ test('TC_NewUserRegistration_04_Successful_Registration_with_Only_Required_Field
 }
 );
 
-test('TC_NewUserRegistration_05_Register_with_Already_Registered_Email', async ({ page }) => {
+test('TC_05_Register_with_Already_Registered_Email', async ({ page }) => {
 
     const poManager = new POmanager(page)
     const registrationPage = poManager.getRegistrationPage();

@@ -2,7 +2,7 @@ const { test, expect } = require("@playwright/test");
 const { POmanager } = require("../pageobjects/POmanager");
 const LoginDataset = JSON.parse(JSON.stringify(require("../TestData/LoginPageObjectTestData.json")))
 
-test('TC_Login_01_Successful_Login', async ({ page }) => {
+test('TC_01_Successful_Login', async ({ page }) => {
 
     //Fetch email and password data from json data file
     const loginCredential = LoginDataset[1];
@@ -29,7 +29,7 @@ test('TC_Login_01_Successful_Login', async ({ page }) => {
 
 })
 
-test('TC_Login_02_Login_Wrong_Password', async ({ page }) => {
+test('TC_02_Login_Wrong_Password', async ({ page }) => {
 
     //Fetch email and password data from json data file
     const loginCredential = LoginDataset[2];
@@ -55,7 +55,7 @@ test('TC_Login_02_Login_Wrong_Password', async ({ page }) => {
 
 })
 
-test('TC_Login_03_Login_with_Empty_Email', async ({ page }) => {
+test('TC_03_Login_with_Empty_Email', async ({ page }) => {
 
     //Fetch email and password data from json data file
     const loginCredential = LoginDataset[3];
@@ -81,7 +81,7 @@ test('TC_Login_03_Login_with_Empty_Email', async ({ page }) => {
 
 })
 
-test('TC_Login_04_Login_with_Empty_Password', async ({ page }) => {
+test('TC_04_with_Empty_Password', async ({ page }) => {
 
     //Fetch email and password data from json data file
     const loginCredential = LoginDataset[4];
@@ -107,7 +107,7 @@ test('TC_Login_04_Login_with_Empty_Password', async ({ page }) => {
 
 })
 
-test('TC_Login_05_Login_with_Empty_Fields', async ({ page }) => {
+test('TC_05_Login_with_Empty_Fields', async ({ page }) => {
 
     //Fetch email and password data from json data file
     const loginCredential = LoginDataset[5];

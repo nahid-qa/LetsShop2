@@ -31,7 +31,7 @@ test.beforeAll(async () => {
 
 })
 
-test("TC_CreateOrder_01_SUCCESS_PlaceOrderWithSingleProduct", async ({ page }) => {
+test("TC_01_SUCCESS_PlaceOrderWithSingleProduct", async ({ page }) => {
 
     //Set loken value in local storage.
     await page.addInitScript(value => {
